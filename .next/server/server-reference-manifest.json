@@ -1,0 +1,50 @@
+{
+  "node": {
+    "4034b16b25868bd28098ea8ea512297d075ce93248": {
+      "workers": {
+        "app/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/medical-question-wolof.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/ai/flows/medical-question-french.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/medical-question-english.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/ai/flows/audio-medical-question.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/chat/page": "action-browser"
+      }
+    },
+    "40ef33932a8740426743d860745321374c7b7bf1aa": {
+      "workers": {
+        "app/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/medical-question-wolof.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/ai/flows/medical-question-french.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/medical-question-english.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/ai/flows/audio-medical-question.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/chat/page": "action-browser"
+      }
+    },
+    "40a3c6e79a7e75ef2c362ab04843a63fa19a12b3ac": {
+      "workers": {
+        "app/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/medical-question-wolof.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/ai/flows/medical-question-french.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/medical-question-english.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/ai/flows/audio-medical-question.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/chat/page": "action-browser"
+      }
+    },
+    "40b3d169366aadc8f3cf9721648b45836ea0f737fd": {
+      "workers": {
+        "app/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/medical-question-wolof.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/ai/flows/medical-question-french.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/medical-question-english.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/ai/flows/audio-medical-question.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/chat/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "THIts0zlPakGBS4kQEZJZyO2qJiXPMmTGVsSQX3q40A="
+}

@@ -9,7 +9,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+  "test:unit": "your_unit_test_command_here",
+  "test:integration": "your_integration_test_command_here",
+  "test:performance": "your_performance_test_command_here",
+ 
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.8.0",

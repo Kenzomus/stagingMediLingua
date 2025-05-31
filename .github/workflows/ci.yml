@@ -1,0 +1,71 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main # Trigger main deploy on pushes to main
+      - develop # Trigger stage deploy on pushes to develop
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' # Only run this job on main branch pushes
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14' # Or your preferred Node.js version
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run Unit Tests
+      run: npm run test:unit # Replace with your unit test command
+
+    - name: Run Integration Tests
+      run: npm run test:integration # Replace with your integration test command
+
+    - name: Run Performance Tests
+      run: npm run test:performance # Replace with your performance test command
+
+    - name: Build project
+      run: npm run build # Replace with your build command
+
+    - name: Deploy to Firebase Hosting (Live)
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HEALTHCARE_AI_APP }}
+        projectId: healthcare-ai-app
+        channelId: live # Deploy to the live channel
+
+  deploy_stage:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop' # Only run this job on develop branch pushes
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14' # Or your preferred Node.js version
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build project
+      run: npm run build # Replace with your build command
+
+    - name: Deploy to Firebase Hosting (Stage)
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HEALTHCARE_AI_APP }}
+        projectId: healthcare-ai-app
+        channelId: stage # Deploy to the stage channel
