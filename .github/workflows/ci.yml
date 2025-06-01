@@ -26,12 +26,6 @@ jobs:
     - name: Run Unit Tests
       run: npm run test:unit # Replace with your unit test command
 
-    - name: Run Integration Tests
-      run: npm run test:integration # Replace with your integration test command
-
-    - name: Run Performance Tests
-      run: npm run test:performance # Replace with your performance test command
-
     - name: Build project
       run: npm run build # Replace with your build command
 

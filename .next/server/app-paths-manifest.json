@@ -1,3 +1,9 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/appointments/page": "app/appointments/page.js",
+  "/chat/page": "app/chat/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/find-a-doctor/page": "app/find-a-doctor/page.js",
+  "/page": "app/page.js",
+  "/video-consultation/page": "app/video-consultation/page.js"
 }

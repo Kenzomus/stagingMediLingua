@@ -33,10 +33,10 @@
   "test:unit": "jest",
   
     
-  "test:integration": "your_integration_test_command_here",
+  "test:integration": "cypress run",
   
     
-  "test:performance": "your_performance_test_command_here"
+  "test:performance": "lighthouse http://localhost:9002 --output html --headless"
   
   },
   
@@ -192,6 +192,9 @@
   
     
   "jest": "^29.7.0",
+  
+    
+  "lighthouse": "^12.6.0",
   
     
   "postcss": "^8",
