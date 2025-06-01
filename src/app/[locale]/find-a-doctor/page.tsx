@@ -487,5 +487,4 @@ function DoctorCard({ doctor, onSendRequest, onInviteDoctor, t, tGlobal }: Docto
 // In Client Components, direct dynamic imports for date-fns locales like this might be tricky due to bundling.
 // It's often simpler to require them if the set of languages is small and known, as done in the Popover.
 // For many languages, a more sophisticated solution might be needed.
-
-```
+     

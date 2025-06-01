@@ -2,8 +2,7 @@
 "use client";
 
 import * as React from "react";
-import Link from "next-intl/client"; // Use next-intl Link
-import { Link } from "next-intl"; // Use next-intl Link
+import { Link } from "next-intl"
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
