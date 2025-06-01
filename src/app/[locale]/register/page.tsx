@@ -3,7 +3,7 @@
 
 import * as React from "react";
 import Link from "next-intl/client"; // Use next-intl Link
-import { useForm } from "react-hook-form";
+import { Link } from "next-intl"; // Use next-intl Link
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";

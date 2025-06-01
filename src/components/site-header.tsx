@@ -1,9 +1,8 @@
 
 "use client";
 
-import Link from 'next-intl/client';
-import { usePathname, useRouter } from 'next-intl/client';
-import { useLocale, useTranslations } from 'next-intl';
+import { Link, useLocale, useTranslations } from 'next-intl';
+import { usePathname, useRouter } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Stethoscope, Search, CalendarDays, LayoutDashboard, LogIn, UserPlus, MessageSquareText, Languages, Video, LogOut, UserCircle as UserIcon } from 'lucide-react';
 import { useAuth } from '@/contexts/auth-context'; // Import useAuth
